@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo2.png" style="width:140px; height:80px" class="logo" alt=""></a>
+        <h1>SAMVAAD</h1>
+       
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="#">DONATE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="top">
+        <h1>Start Translation to Audio</h1>
+        <video id="video" autoplay></video>
+        <div id="output">Translation will appear here</div>
+        <div id="controls">
+            <button id="startBtn">Start Recognition</button>
+            <button id="stopBtn">Stop Recognition</button>
+        </div>
+    </section>
+    <hr>
+    <section id="bot">
+        <h1>Start Translation to ISL</h1>
+        <div id="output-bot">Translation will appear here</div>
+        <div id="mic-container">
+            <button id="audio"><i>🎙️</i></button>
+            <button id="stopSpeaking">Stop Speaking</button>
+            <div id="voice-input-container">
+                <p id="voice-input-text">Speak now...</p>
+                <div id="video-image-container" class="dots-animation">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
